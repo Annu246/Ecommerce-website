@@ -16,14 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 use \App\Category;
 use \App\Featured_Products;
-use \App\Recent_Products;
+
 
 
 
 Route::get('/', function () {
      $categories= Category::all();
     $featured_products=Featured_Products::all();
-    $recent_products=Recent_Products::all();
+    $recent_products=App\Recent_products::all();
 
     //  $data = [];
     // $data['category'] = Category::all()

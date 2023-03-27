@@ -308,7 +308,7 @@
                             @csrf
                             <input type="hidden" value="{{ $shop->id }}" name="id">
                             <input type="hidden" value="{{ $shop->name }}" name="name">
-                            <input type="hidden" value="{{ $shop->price }}" name="price">
+                            <input type="hidden" value="{{ $shop->Price }}" name="price">
                             <input type="hidden" value="{{ $shop->image }}"  name="image">
                             <input type="hidden" value="1" name="quantity">
                             <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To

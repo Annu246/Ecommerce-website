@@ -16,6 +16,7 @@ class CartController extends Controller
 
     public function addToCart(Request $request)
     {
+        // dd($request->all());
         \Cart::add([
             'id' => $request->id,
             'name' => $request->name,
